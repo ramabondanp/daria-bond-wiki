@@ -1,0 +1,48 @@
+site_name: ویکی داریا باند
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+  language: fa
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - search.highlight
+    - navigation.sections
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  custom_dir: overrides
+
+extra_css:
+  - stylesheets/custom.css
+
+# extra_javascript:
+#   - javascripts/custom.js
+
+repo_url: https://github.com/nimafanniasl/daria-bond-wiki/
+repo_name: دیدن پروژه در گیتهاب
+edit_uri: edit/main/docs/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+ - خانه: index.md
+ - آنلاک بوتلودر: unlock-bootloader.md
