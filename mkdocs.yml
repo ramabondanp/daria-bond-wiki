@@ -46,3 +46,4 @@ markdown_extensions:
 nav:
  - خانه: index.md
  - آنلاک بوتلودر: unlock-bootloader.md
+ - بارگیری رام رسمی: official-rom.md
