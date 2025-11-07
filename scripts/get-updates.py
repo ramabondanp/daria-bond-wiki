@@ -55,7 +55,7 @@ with open("scripts/unlisted_updates.json", "r") as f:
 
                             <h3>Download: <a href="{update["url"]}">{update["filename"]}</a></h3>
                             
-                            {f"<h3>Download Boot + Recovery Image: <a href=\"{update["boot_img"]}\">boot.img</a></h3>" if update.get("boot_image", False) else ""}
+                            {f"<h3>Download Boot + Recovery Image: <a href=\"{update["boot_img"]}\">boot.img</a></h3>" if update.get("boot_img", False) else ""}
 
                             <p>File Size: {size_gb:.2f} GB - md5sum: {update["md5sum"]} - API Level {update["api_level"]} - Type: {update.get("updatetype", "N/A")}</p>
                             </details>
