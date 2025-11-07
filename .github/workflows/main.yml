@@ -22,7 +22,7 @@ jobs:
             path: .cache
             restore-keys: |
               mkdocs-material-
-        - run: pip install -r req.txt
+        - run: pip install -r scripts/req.txt
 
         - run: python scripts/get-updates.py
 

@@ -46,4 +46,7 @@ markdown_extensions:
 nav:
  - خانه: index.md
  - آنلاک بوتلودر: unlock-bootloader.md
+ - کاستوم رام:
+    - لیست کاستوم رام ها: custom-roms/custom-rom-list.md
  - بارگیری رام رسمی: official-rom.md
+ - خطا های رایج: common-errors.md
