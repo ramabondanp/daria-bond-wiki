@@ -1,3 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+    </url>
+    <url>
+        <loc>Nonecommon-errors/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="Nonecommon-errors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/common-errors/"/>
+    </url>
+    <url>
+        <loc>Nonedowngrade-to-os5/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="Nonedowngrade-to-os5/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/downgrade-to-os5/"/>
+    </url>
+    <url>
+        <loc>Noneofficial-rom/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="Noneofficial-rom/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/official-rom/"/>
+    </url>
+    <url>
+        <loc>Noneunlock-bootloader/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="Noneunlock-bootloader/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/unlock-bootloader/"/>
+    </url>
+    <url>
+        <loc>Nonecustom-roms/custom-rom-list/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="Nonecustom-roms/custom-rom-list/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/custom-roms/custom-rom-list/"/>
+    </url>
+    <url>
+        <loc>Noneen/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="None"/>
+    </url>
+    <url>
+        <loc>Noneen/common-errors/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/common-errors/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="Nonecommon-errors/"/>
+    </url>
+    <url>
+        <loc>Noneen/downgrade-to-os5/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/downgrade-to-os5/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="Nonedowngrade-to-os5/"/>
+    </url>
+    <url>
+        <loc>Noneen/official-rom/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/official-rom/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="Noneofficial-rom/"/>
+    </url>
+    <url>
+        <loc>Noneen/unlock-bootloader/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/unlock-bootloader/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="Noneunlock-bootloader/"/>
+    </url>
+    <url>
+        <loc>Noneen/custom-roms/custom-rom-list/</loc>
+        <lastmod>2025-11-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/custom-roms/custom-rom-list/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="Nonecustom-roms/custom-rom-list/"/>
+    </url>
 </urlset>
