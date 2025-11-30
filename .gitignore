@@ -1,3 +1,5 @@
 ignore_dir/
 .venv/
 docs/official-rom.md
+docs/official-rom.en.md
+site/
