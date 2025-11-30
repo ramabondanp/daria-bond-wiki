@@ -77,8 +77,8 @@
         if (!lang) return;
         lang = lang.toLowerCase();
 
-        // If language is NOT Persian (fa) and NOT Arabic (ar)
-        if (!lang.startsWith('fa') && !lang.startsWith('ar')) {
+        // If language is NOT Persian (fa), NOT Arabic (ar), and NOT Dari (prs)
+        if (!lang.startsWith('fa') && !lang.startsWith('ar') && !lang.startsWith('prs')) {
           var newPath;
           
           if (path.startsWith("/" + repoName + "/")) {
