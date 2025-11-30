@@ -1,4 +1,5 @@
 site_name: ویکی داریا باند
+site_url: https://ramabondanp.github.io/daria-bond-wiki/
 theme:
   name: material
   palette:
@@ -28,6 +29,39 @@ theme:
         name: Switch to system preference
   custom_dir: overrides
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      languages:
+        - locale: fa
+          name: فارسی
+          build: true
+          default: true
+          site_name: ویکی داریا باند
+        - locale: en
+          name: English
+          build: true
+          site_name: Daria Bond Wiki
+          nav_translations:
+            "خانه": "Home"
+            "آنلاک بوتلودر": "Unlock Bootloader"
+            "کاستوم رام": "Custom ROMs"
+            "لیست کاستوم رام ها": "Custom ROM List"
+            "بارگیری رام رسمی": "Official ROM Download"
+            "خطا های رایج": "Common Errors"
+      material: true
+
+extra:
+  alternate:
+    - name: فارسی
+      link: /daria-bond-wiki/
+      lang: fa
+    - name: English
+      link: /daria-bond-wiki/en/
+      lang: en
+
 extra_css:
   - stylesheets/custom.css
 
@@ -35,7 +69,7 @@ extra_css:
 #   - javascripts/custom.js
 
 repo_url: https://github.com/nimafanniasl/daria-bond-wiki/
-repo_name: دیدن پروژه در گیتهاب
+repo_name: GitHub
 edit_uri: edit/main/docs/
 
 markdown_extensions:
