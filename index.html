@@ -58,6 +58,50 @@
     
     
     
+  
+  <script>
+    (function() {
+      try {
+        var path = window.location.pathname;
+        var repoName = "daria-bond-wiki";
+        
+        // Check if we are already in the English section
+        // We look for '/en/' segment.
+        if (path.indexOf("/en/") !== -1) {
+          sessionStorage.setItem('lang_redirected', 'true');
+          return;
+        }
+        
+        // Prevent redirect loop if already redirected in this session
+        if (sessionStorage.getItem('lang_redirected')) {
+          return;
+        }
+
+        var lang = navigator.language || navigator.userLanguage;
+        if (!lang) return;
+        lang = lang.toLowerCase();
+
+        // If language is NOT Persian (fa) and NOT Arabic (ar)
+        if (!lang.startsWith('fa') && !lang.startsWith('ar')) {
+          var newPath;
+          
+          if (path.startsWith("/" + repoName + "/")) {
+            // Production: /daria-bond-wiki/... -> /daria-bond-wiki/en/...
+            newPath = path.replace("/" + repoName + "/", "/" + repoName + "/en/");
+          } else {
+            // Local/Root: /... -> /en/...
+            newPath = "/en" + (path === "/" ? "/" : path);
+          }
+          
+          sessionStorage.setItem('lang_redirected', 'true');
+          window.location.href = newPath;
+        }
+      } catch (e) {
+        console.error("Language redirect error:", e);
+      }
+    })();
+  </script>
+
   </head>
   
   
