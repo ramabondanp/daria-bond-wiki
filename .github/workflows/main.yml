@@ -1,29 +1,30 @@
 on:
-    push:
-        branches:
-            - main
+  workflow_dispatch:
+
 permissions:
   contents: write
 
 jobs:
-    deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        
-        - uses: actions/setup-python@v5
-          with:
-            python-version: 3.x
-        - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
 
-        - uses: actions/cache@v4
-          with:
-            key: mkdocs-material-${{ env.cache_id }}
-            path: .cache
-            restore-keys: |
-              mkdocs-material-
-        - run: pip install -r scripts/req.txt
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
 
-        - run: python scripts/get-updates.py
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
 
-        - run: mkdocs gh-deploy --force
+      - run: pip install -r scripts/req.txt
+
+      - run: python scripts/get-updates.py
+
+      - run: mkdocs gh-deploy --force
